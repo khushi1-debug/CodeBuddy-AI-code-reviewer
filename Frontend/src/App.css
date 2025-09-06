@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 2.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left {
+  background-color: rgb(27, 27, 27);
+  position: relative;
+}
+
+main .review-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(96, 130, 254);
+  color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.review-btn:hover {
+  background: rgb(62, 107, 243);
+}
+
+main .right {
+  background-color: rgb(58, 58, 58);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  overflow: auto;
+}
+
+.left .code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #0c0c0c;
+}
